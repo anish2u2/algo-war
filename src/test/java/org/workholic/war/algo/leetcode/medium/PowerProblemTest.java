@@ -30,6 +30,21 @@ public class PowerProblemTest {
 		Assert.assertEquals( 1024.00000d, powerProblem.myPow(2.00000, 10),0.0005d);
 	}
 	
+	@Test
+	public void testNegative() {
+		Assert.assertEquals( 0.25000d, powerProblem.myPow(2.00000, -2),0.0005d);
+	}
+	
+	/*@Test
+	public void testSample1() {
+		Assert.assertEquals( 9.26100d, powerProblem.myPow(2.10000, 3),0.0005d);
+	}*/
+	
+	@Test
+	public void testSample195() {
+		Assert.assertEquals( 9.26100d, powerProblem.myPow(1.84364, -14),0.0005d);
+	}
+	
 	@After
 	public void clear() {
 		powerProblem=null;
