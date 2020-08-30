@@ -45,7 +45,7 @@ public class LoadUpdatedProps {
 	static class PropertiesLoader {
 		private Properties props;
 
-		private String absoluteFilePath = "C:\\workspace\\props.properties";
+		private String absoluteFilePath = "";
 
 		private Date lastCheckedTime = null;
 
